@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="InitialController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="InitialController" customModule="Card_Shark_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnI-gn-6pi">
+                                <rect key="frame" x="12" y="562" width="351" height="85"/>
+                                <color key="backgroundColor" red="0.0013271663337945938" green="0.3275567889213562" blue="0.57669931650161743" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="351" id="FIN-2v-LAR"/>
+                                    <constraint firstAttribute="height" constant="85" id="bsn-dD-M5x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="Shuffle Cards!">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="shuffleCards:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rGe-La-4XZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ready to shuffle up and deal?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xht-Ab-pZ2">
+                                <rect key="frame" x="35" y="106" width="305" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="agv-Mq-b1O"/>
+                                    <constraint firstAttribute="height" constant="105" id="qqA-M8-HhJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" red="0.18834766745567322" green="0.5682864785194397" blue="0.38299334049224854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BnI-gn-6pi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="QGb-Or-zbb"/>
+                            <constraint firstItem="xht-Ab-pZ2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="86" id="Uq5-jd-Q3a"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BnI-gn-6pi" secondAttribute="trailing" constant="12" id="YeA-Sb-Gob"/>
+                            <constraint firstItem="xht-Ab-pZ2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="c9m-Xs-adg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xht-Ab-pZ2" secondAttribute="trailing" constant="35" id="ew4-IK-GIE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BnI-gn-6pi" secondAttribute="bottom" constant="20" id="pkI-LF-TQK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="70q-P2-oph"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="458" y="66"/>
+        </scene>
+        <!--Second Controller-->
+        <scene sceneID="ocS-Nn-BRX">
+            <objects>
+                <viewController storyboardIdentifier="SecondController" id="fq1-Ua-PmU" customClass="SecondController" customModule="Card_Shark_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9hf-24-D49">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="THR-if-2mu">
+                                <rect key="frame" x="0.0" y="595" width="220" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="7U5-W2-Nkd"/>
+                                    <constraint firstAttribute="height" constant="72" id="kBF-Lz-DrF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Arrange">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="arrange:" destination="fq1-Ua-PmU" eventType="touchUpInside" id="UEL-tZ-WcZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fs-P8-RJv">
+                                <rect key="frame" x="222" y="595" width="153" height="72"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="0TL-jR-899"/>
+                                    <constraint firstAttribute="height" constant="72" id="xvc-As-mRd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Re-Shuffle">
+                                    <color key="titleColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reShuffle:" destination="fq1-Ua-PmU" eventType="touchUpInside" id="sTg-bY-0lG"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hpY-RT-Q1m">
+                                <rect key="frame" x="0.0" y="95" width="375" height="499"/>
+                                <color key="backgroundColor" red="0.18638824954699748" green="0.56910295050761417" blue="0.38436817534349249" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="499" id="9Tu-cg-Ibm"/>
+                                    <constraint firstAttribute="width" constant="375" id="pnF-08-OXz"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rDM-0m-68X">
+                                    <size key="itemSize" width="275" height="199"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardCell" id="HV0-li-sAm" customClass="CardCell" customModule="Card_Shark_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="0.0" width="275" height="199"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="275" height="199"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zuW-rD-EMQ">
+                                                    <rect key="frame" x="8" y="8" width="259" height="183"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="zuW-rD-EMQ" firstAttribute="top" secondItem="HV0-li-sAm" secondAttribute="topMargin" id="ABa-zX-wpY"/>
+                                            <constraint firstItem="zuW-rD-EMQ" firstAttribute="leading" secondItem="HV0-li-sAm" secondAttribute="leadingMargin" id="QmC-xj-rOc"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="zuW-rD-EMQ" secondAttribute="trailing" id="Usd-3I-b16"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="zuW-rD-EMQ" secondAttribute="bottom" id="up8-aF-Yo7"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="cardView" destination="zuW-rD-EMQ" id="0jh-i9-LI0"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fq1-Ua-PmU" id="VB2-Na-WN0"/>
+                                    <outlet property="delegate" destination="fq1-Ua-PmU" id="WAR-Pk-ePh"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ALL CARDS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qL-pT-f7O">
+                                <rect key="frame" x="123" y="45" width="129" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="Cx6-md-VQZ"/>
+                                    <constraint firstAttribute="height" constant="41" id="q2N-4I-v4Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="THR-if-2mu" firstAttribute="top" secondItem="hpY-RT-Q1m" secondAttribute="bottom" constant="1" id="6yR-uf-i5e"/>
+                            <constraint firstItem="6qL-pT-f7O" firstAttribute="top" secondItem="0ht-HW-YfO" secondAttribute="top" constant="25" id="EVF-Rq-Z0V"/>
+                            <constraint firstItem="THR-if-2mu" firstAttribute="bottom" secondItem="0ht-HW-YfO" secondAttribute="bottom" id="LTq-Ee-qBe"/>
+                            <constraint firstAttribute="trailing" secondItem="5fs-P8-RJv" secondAttribute="trailing" id="SUk-rR-d6c"/>
+                            <constraint firstItem="THR-if-2mu" firstAttribute="leading" secondItem="0ht-HW-YfO" secondAttribute="leading" id="WGy-av-faN"/>
+                            <constraint firstItem="hpY-RT-Q1m" firstAttribute="trailing" secondItem="0ht-HW-YfO" secondAttribute="trailing" id="aOT-qA-1kW"/>
+                            <constraint firstItem="hpY-RT-Q1m" firstAttribute="leading" secondItem="0ht-HW-YfO" secondAttribute="leading" id="h2H-2Z-ibh"/>
+                            <constraint firstItem="0ht-HW-YfO" firstAttribute="trailing" secondItem="6qL-pT-f7O" secondAttribute="trailing" constant="123" id="qQ1-4W-Vqe"/>
+                            <constraint firstItem="5fs-P8-RJv" firstAttribute="leading" secondItem="THR-if-2mu" secondAttribute="trailing" constant="2" id="rNN-7T-tAS"/>
+                            <constraint firstItem="6qL-pT-f7O" firstAttribute="leading" secondItem="0ht-HW-YfO" secondAttribute="leading" constant="123" id="vMn-ie-K19"/>
+                            <constraint firstItem="5fs-P8-RJv" firstAttribute="bottom" secondItem="0ht-HW-YfO" secondAttribute="bottom" id="xR4-Ny-SAO"/>
+                            <constraint firstItem="hpY-RT-Q1m" firstAttribute="top" secondItem="6qL-pT-f7O" secondAttribute="bottom" constant="9" id="yF9-mE-QPC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ht-HW-YfO"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="hpY-RT-Q1m" id="6ir-mS-xyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="afg-dK-h79" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1196" y="64.31784107946028"/>
+        </scene>
+    </scenes>
+</document>
